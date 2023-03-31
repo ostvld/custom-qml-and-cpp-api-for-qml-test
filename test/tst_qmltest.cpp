@@ -1,4 +1,4 @@
-#include "core.hpp"
+#include "core_fake.hpp"
 #include "integrity_library.h"
 #include "qstringliteral.h"
 
@@ -18,7 +18,9 @@ public slots:
     {
         engine->rootContext()->setContextProperty("myContextProperty", QVariant(true));
 
-        Core::Proxy::libraryRegistration();
+        auto core = new CoreFake::Proxy(engine);
+        core->libraryRegistration();
+
         IntegrityLibrary::init(engine);
     }
 };

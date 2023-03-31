@@ -34,7 +34,7 @@ target_compile_definitions(qmltest PRIVATE "QUICK_TEST_SOURCE_DIR=\"${CMAKE_CURR
 
 target_include_directories(qmltest PUBLIC
     ${CMAKE_SOURCE_DIR}/csc/inc
-    ${CMAKE_SOURCE_DIR}/core/inc
+    ${CMAKE_SOURCE_DIR}/core_fake/inc
     ${CMAKE_SOURCE_DIR}/integrity/inc
 )
 
@@ -45,7 +45,7 @@ target_link_libraries(qmltest PUBLIC
     Qt${QT_VERSION_MAJOR}::Charts
     Qt${QT_VERSION_MAJOR}::Test
     Qt${QT_VERSION_MAJOR}::QuickTest
-    core
+    core_fake
     csc
     integrity_Lib
     )

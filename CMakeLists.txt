@@ -32,6 +32,7 @@ endif()
 
 add_subdirectory(custom_style_components)
 add_subdirectory(core)
+add_subdirectory(core_fake)
 add_subdirectory(integrity)
 add_subdirectory(app)
 add_subdirectory(test)

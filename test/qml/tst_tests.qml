@@ -29,7 +29,7 @@ TestCase {
         var textName=button1.text;
         compare(2 + 2, 4, "2 + 2 = 4")
         compare(tst , true)
-        compare(version ,  "0.1.0.0")
+        compare(version ,  "0.1.0.0_fake")
         compare(textName ,  "IntegrityView: CSCButton")
     }
 
@@ -60,7 +60,7 @@ TestCase {
         var textName=button2.text;
         compare(2 + 2, 4, "2 + 2 = 4")
         compare(tst , true)
-        compare(version ,  "0.1.0.0")
+        compare(version ,  "0.1.0.0_fake")
         compare(textName ,  "IntegrityView: CSCButton")
     }
 
@@ -91,7 +91,7 @@ TestCase {
         var textName=button1.text;
         compare(2 + 2, 4, "2 + 2 = 4")
         compare(tst , true)
-        compare(version ,  "0.1.0.0")
+        compare(version ,  "0.1.0.0_fake")
         compare(textName ,  "IntegrityView: CSCButton")
     }
 
